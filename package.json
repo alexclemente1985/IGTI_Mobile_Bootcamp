@@ -6,8 +6,7 @@
   "author": "Alexandre Clemente Pinheiro",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -r ts-node/register ./src/index.ts",
-    "dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts"
+    "start": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts"
   },
   "devDependencies": {
     "@types/node": "^14.11.2",
