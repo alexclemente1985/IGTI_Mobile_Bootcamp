@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
 const App = () => {
- 
+ useEffect(() => {
+   SplashScreen.hide();
+ }, []);
   return (
     <>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="dark-content" backgroundColor='white' />
       <SafeAreaView>
         <ScrollView>
         <Text>App do desafio</Text>
